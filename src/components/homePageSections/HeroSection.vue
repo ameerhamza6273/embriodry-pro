@@ -2,12 +2,13 @@
   <div>
     <!-- hero section image -->
     <carousel
-      :autoplay="false"
+      :autoplay="true"
       :dots="true"
       :center="true"
       :slideBy="1"
       :items="1"
       :nav="false"
+      :loop="true"
     >
       <div
         class="main-img"
