@@ -15,7 +15,12 @@
       fermentum velit morbi viverra.
     </p>
     <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mt-20 gap-8">
-      <div v-for="card in recentCards" :key="card.icon" class="rounded-xl">
+      <div
+        v-for="card in recentCards"
+        :key="card.icon"
+        class="rounded-xl cursor-pointer"
+        @click="$router.push('/gallery')"
+      >
         <img
           :src="card.img"
           alt="user"
@@ -30,7 +35,8 @@
       </div>
     </div>
     <button
-      class="bg-navbgcolor rounded px-4 py-2 flex text-white mx-auto mt-20 font-bold text-sm items-center"
+      class="bg-navbgcolor rounded px-4 py-2 flex text-white mx-auto mt-20 font-bold text-sm items-center hover:opacity-85"
+      @click="$router.push('/gallery')"
     >
       Know more about us<img src="Arrow 4.png" alt="user" class="ml-2 h-3.5" />
     </button>

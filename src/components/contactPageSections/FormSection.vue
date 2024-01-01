@@ -40,7 +40,7 @@
             required
           ></textarea>
           <button
-            class="bg-navbgcolor rounded px-4 py-2 text-white mt-4 font-bold text-sm"
+            class="bg-navbgcolor rounded px-4 py-2 text-white mt-4 font-bold text-sm hover:opacity-85"
           >
             Send Message
           </button>

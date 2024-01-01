@@ -13,7 +13,8 @@
         transportation requirements.
       </p>
       <button
-        class="bg-navbgcolor rounded px-4 py-2 flex text-white mx-auto mt-8 font-bold text-sm items-center"
+        class="bg-navbgcolor rounded px-4 py-2 flex text-white mx-auto mt-8 font-bold text-sm items-center hover:opacity-85"
+        @click="$router.push('/contact')"
       >
         Contact Us
       </button>

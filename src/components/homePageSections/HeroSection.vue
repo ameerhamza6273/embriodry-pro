@@ -1,11 +1,22 @@
 <template>
   <div>
     <!-- hero section image -->
-    <img
-      src="Rectangle 4817.png"
-      alt="user"
-      class="w-full md:h-[500px] h-[220px]"
-    />
+    <carousel
+      :autoplay="false"
+      :dots="true"
+      :center="true"
+      :slideBy="1"
+      :items="1"
+      :nav="false"
+    >
+      <div
+        class="main-img"
+        v-for="(item, index) in carouselImages"
+        :key="index"
+      >
+        <img :src="item.img" alt="user" class="w-full md:h-[500px] h-[220px]" />
+      </div>
+    </carousel>
     <!-- about section -->
     <h1
       class="text-headingclr text-4xl font-bold font-bevietnam text-center mt-16"
@@ -38,10 +49,17 @@
 </template>
 
 <script>
+import carousel from "vue-owl-carousel";
 export default {
-  name: "homePage",
+  name: "heroSection",
+  components: { carousel },
   data() {
     return {
+      carouselImages: [
+        { img: "mainimage(2).jpeg" },
+        { img: "mainimage(3).jpeg" },
+        { img: "Rectangle 4817.png" },
+      ],
       aboutBox: [
         {
           icon: "Group 1000002024.png",
@@ -64,3 +82,12 @@ export default {
   },
 };
 </script>
+<style>
+.owl-theme .owl-dots .owl-dot span {
+  width: 35px !important;
+  margin-top: -5px !important;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: blue !important;
+}
+</style>

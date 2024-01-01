@@ -19,7 +19,8 @@
         <div
           v-for="card in serviseCards"
           :key="card.icon"
-          class="bg-white rounded-xl p-3 shadow-lg"
+          class="bg-white rounded-xl p-3 shadow-lg cursor-pointer"
+          @click="$router.push('/services')"
         >
           <div class="flex justify-between px-3 py-2 items-center">
             <h2 class="text-xl font-bold font-bevietnam text-cardheadingclr">
@@ -31,7 +32,8 @@
         </div>
       </div>
       <button
-        class="bg-navbgcolor rounded px-4 py-2 flex text-white mx-auto mt-12 font-bold text-sm items-center"
+        class="bg-navbgcolor rounded px-4 py-2 flex text-white mx-auto mt-12 font-bold text-sm items-center hover:opacity-85"
+        @click="$router.push('/services')"
       >
         View More<img src="Arrow 4.png" alt="user" class="ml-2 h-3.5" />
       </button>

@@ -53,7 +53,7 @@
     </nav>
     <!-- mobile navbar -->
     <div
-      class="w-full h-full fixed z-20 top-[80px] bg-navbgcolor md:hidden sm:block"
+      class="w-full h-full fixed z-20 top-[75px] bg-navbgcolor md:hidden sm:block"
       v-if="isToggled"
     >
       <div class="px-4">
@@ -61,7 +61,8 @@
           <li v-for="value in pagesLinks" :key="value.title" @click="toggle">
             <router-link
               :to="value.link"
-              class="block py-2 px-3 md:p-0 font-bevietnam font-normal text-white"
+              :class="{ 'border-b': $route.path === value.link }"
+              class="pt-2 mb-2 mx-2 font-bevietnam font-normal text-white inline-block"
             >
               {{ value.title }}
             </router-link>

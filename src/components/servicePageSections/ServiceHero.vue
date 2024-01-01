@@ -30,11 +30,10 @@
           :key="card.icon"
           class="bg-white rounded-xl p-3 shadow-xl"
         >
-          <div class="flex justify-between px-3 py-2 items-center">
+          <div class="px-3 py-2">
             <h2 class="text-xl font-bold font-bevietnam text-cardheadingclr">
               {{ card.title }}
             </h2>
-            <img :src="card.icon" alt="user" class="h-14" />
           </div>
           <img :src="card.img" alt="user" class="mt-3 w-full" />
           <div class="flex justify-between mt-4 mb-2">
