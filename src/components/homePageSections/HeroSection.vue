@@ -1,0 +1,66 @@
+<template>
+  <div>
+    <!-- hero section image -->
+    <img
+      src="Rectangle 4817.png"
+      alt="user"
+      class="w-full md:h-[500px] h-[220px]"
+    />
+    <!-- about section -->
+    <h1
+      class="text-headingclr text-4xl font-bold font-bevietnam text-center mt-16"
+    >
+      About
+    </h1>
+    <p
+      class="font-bevietnam text-center max-w-[1200px] mx-auto mt-4 px-2 font-normal text-base text-textcolor"
+    >
+      Lorem ipsum dolor sit amet consectetur. Augue curabitur et elit fames
+      faucibus eget maecenas egestas posuere. Nunc adipiscing erat et rutrum
+      mauris eros. Enim aliquet luctus lorem elit consequat eros congue tellus.
+      Lacus augue metus praesent ultricies. Elit aliquam id posuere sed suscipit
+      cras eget massa integer.
+    </p>
+    <div
+      class="mt-20 grid lg:grid-cols-2 grid-cols-1 max-w-[1200px] mx-auto gap-10 px-2"
+    >
+      <div>
+        <img src="image 35.png" alt="user" />
+      </div>
+      <div class="self-center">
+        <div v-for="value in aboutBox" :key="value.icon" class="flex my-4">
+          <img :src="value.icon" alt="user" class="h-7 mr-3 mt-1" />
+          <p class="text-lg">{{ value.text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "homePage",
+  data() {
+    return {
+      aboutBox: [
+        {
+          icon: "Group 1000002024.png",
+          text: "Lorem ipsum dolor sit amet consectetur. Augue curabitur et elit fames faucibus eget maecenas egestas posuere.",
+        },
+        {
+          icon: "Group 1000002024.png",
+          text: "Lorem ipsum dolor sit amet consectetur. Augue curabitur et elit fames faucibus eget maecenas egestas posuere.",
+        },
+        {
+          icon: "Group 1000002024.png",
+          text: "Lorem ipsum dolor sit amet consectetur. Augue curabitur et elit fames faucibus eget maecenas egestas posuere.",
+        },
+        {
+          icon: "Group 1000002024.png",
+          text: "Lorem ipsum dolor sit amet consectetur. Augue curabitur et elit fames faucibus eget maecenas egestas posuere.",
+        },
+      ],
+    };
+  },
+};
+</script>

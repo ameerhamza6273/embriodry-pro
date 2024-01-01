@@ -1,32 +1,21 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+    <!-- navbar ie here -->
+    <navbarPage />
+    <!-- all pages data ie here -->
     <router-view />
+    <!-- footer is here -->
+    <pageFooter />
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+<script>
+import navbarPage from "./components/PageNavbar.vue";
+import pageFooter from "./components/PageFooter.vue";
+export default {
+  components: {
+    navbarPage,
+    pageFooter,
+  },
+};
+</script>
