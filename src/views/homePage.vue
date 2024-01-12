@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-16">
+  <div class="md:pt-16 pt-24">
     <!-- hero section & about section -->
     <heroSection />
     <!-- servise section is here -->

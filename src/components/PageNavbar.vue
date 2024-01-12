@@ -1,11 +1,11 @@
 <template>
   <div>
-    <nav class="bg-navbgcolor fixed w-full z-20 top-0 start-0">
+    <nav class="bg-navbgcolor fixed w-full z-20 lg:top-10 top-0 start-0">
       <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-3 lg:px-6 px-4"
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-3.5 lg:px-6 px-4"
       >
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="logo.svg" alt="user" class="w-48" />
+          <img src="logo.svg" alt="user" class="w-44" />
         </a>
         <div class="">
           <button
@@ -42,7 +42,7 @@
               <router-link
                 :to="value.link"
                 :class="{ 'border-b': $route.path === value.link }"
-                class="block pt-2 mb-2 font-bevietnam font-normal text-white text-lg"
+                class="block pt-2 mb-2 font-bevietnam font-normal text-white text-base"
               >
                 {{ value.title }}
               </router-link>
@@ -67,6 +67,24 @@
               {{ value.title }}
             </router-link>
           </li>
+          <button
+            class="bg-white rounded px-3 ml-2 mt-2 py-1.5 flex text-[#244E6A] font-bold text-sm items-center hover:opacity-85"
+            v-on:click="show = !show"
+          >
+            Login<svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              class="ml-2"
+            >
+              <path
+                d="M2.10413 5.92723L7.06748 10.5986C7.5566 11.059 8.31956 11.059 8.80868 10.5986L13.772 5.92723C14.0275 5.68682 14.0396 5.28486 13.7992 5.02943C13.5588 4.77399 13.1569 4.76181 12.9014 5.00222L7.93808 9.67361L2.97473 5.00222C2.7193 4.76181 2.31734 4.77399 2.07693 5.02943C1.83652 5.28486 1.8487 5.68682 2.10413 5.92723Z"
+                fill="#244E6A"
+              />
+            </svg>
+          </button>
         </ul>
       </div>
     </div>
@@ -83,6 +101,7 @@ export default {
         { title: "Home", link: "/" },
         { title: "Our Services", link: "/services" },
         { title: "Gallery", link: "/gallery" },
+        { title: "Place Order", link: "/gallery" },
         { title: "FAQ’s", link: "/faq" },
         { title: "Contact Us", link: "/contact" },
       ],

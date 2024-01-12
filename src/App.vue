@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <!-- navbar ie here -->
+    <topbar />
     <navbarPage />
     <!-- all pages data ie here -->
     <router-view />
@@ -10,10 +11,13 @@
 </template>
 
 <script>
+import topbar from "./components/Topbar.vue";
 import navbarPage from "./components/PageNavbar.vue";
 import pageFooter from "./components/PageFooter.vue";
+
 export default {
   components: {
+    topbar,
     navbarPage,
     pageFooter,
   },
