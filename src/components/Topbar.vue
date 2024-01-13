@@ -92,7 +92,7 @@
     <template v-if="show || dialogBox">
       <section
         v-if="showSignUp"
-        class="absolute max-w-[360px] min-w-[300px] bg-white p-6 border border-[#F2F6F7] top-11 right-14 rounded shadow-lg z-30"
+        class="absolute max-w-[360px] min-w-[300px] bg-white p-6 border border-[#F2F6F7] top-16 lg:top-11 lg:right-14 right-4 rounded shadow-lg z-30"
       >
         <form>
           <span
@@ -145,7 +145,7 @@
       </section>
       <section
         v-if="showLogin"
-        class="absolute max-w-[360px] min-w-[300px] bg-white p-6 border border-[#F2F6F7] top-11 right-14 rounded shadow-lg z-30"
+        class="absolute max-w-[360px] min-w-[300px] bg-white p-6 border border-[#F2F6F7] top-16 lg:top-11 lg:right-14 right-4 rounded shadow-lg z-30"
       >
         <form>
           <span
