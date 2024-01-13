@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-16">
+  <div class="pt-16 lg:pt-28">
     <!-- Gallary Section -->
     <FaqSection />
     <callToActionSection />

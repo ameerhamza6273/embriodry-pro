@@ -89,12 +89,17 @@
       </div>
     </nav>
     <!-- <loginForm v-if="showLogin" /> -->
-    <template v-if="show">
+    <template v-if="show || dialogBox">
       <section
         v-if="showSignUp"
         class="absolute max-w-[360px] min-w-[300px] bg-white p-6 border border-[#F2F6F7] top-11 right-14 rounded shadow-lg z-30"
       >
         <form>
+          <span
+            class="float-right mt-[-5px] cursor-pointer"
+            @click="closeDialog"
+            >x</span
+          >
           <h1
             class="font-bold text-[#005C9A] text-center text-xl mt-[-10px] mb-1"
           >
@@ -143,6 +148,11 @@
         class="absolute max-w-[360px] min-w-[300px] bg-white p-6 border border-[#F2F6F7] top-11 right-14 rounded shadow-lg z-30"
       >
         <form>
+          <span
+            class="float-right mt-[-5px] cursor-pointer"
+            @click="closeDialog"
+            >x</span
+          >
           <h1
             class="font-bold text-[#005C9A] text-center text-xl mt-[-10px] mb-1"
           >
@@ -188,6 +198,12 @@
 // import signupForm from "./SignupForm.vue";
 export default {
   name: "topbar",
+  props: {
+    dialogBox: {
+      type: Boolean,
+      defualt: false,
+    },
+  },
   components: {
     // loginForm,
     // signupForm,
@@ -207,6 +223,10 @@ export default {
     updateLoginVariables() {
       this.showLogin = false;
       this.showSignUp = true;
+    },
+    closeDialog() {
+      this.$emit("closeDialog"); // Emit an event to inform the parent component to close the dialog
+      this.show = false;
     },
   },
 };

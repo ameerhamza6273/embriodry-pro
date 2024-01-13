@@ -1,5 +1,6 @@
 <template>
   <div>
+    <topbar :dialogBox="dialogBox" @closeDialog="closeModal" />
     <nav class="bg-navbgcolor fixed w-full z-20 lg:top-10 top-0 start-0">
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-3.5 lg:px-6 px-4"
@@ -69,8 +70,9 @@
           </li>
           <button
             class="bg-white rounded px-3 ml-2 mt-2 py-1.5 flex text-[#244E6A] font-bold text-sm items-center hover:opacity-85"
-            v-on:click="show = !show"
+            @click="toggle2"
           >
+            <!-- , () -->
             Login<svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -92,16 +94,21 @@
 </template>
 
 <script>
+import topbar from "./Topbar.vue";
 export default {
   name: "PageNavbar",
+  components: {
+    topbar,
+  },
   data() {
     return {
+      dialogBox: false,
       isToggled: false,
       pagesLinks: [
         { title: "Home", link: "/" },
         { title: "Our Services", link: "/services" },
         { title: "Gallery", link: "/gallery" },
-        { title: "Place Order", link: "/gallery" },
+        { title: "Place Order", link: "" },
         { title: "FAQ’s", link: "/faq" },
         { title: "Contact Us", link: "/contact" },
       ],
@@ -110,6 +117,13 @@ export default {
   methods: {
     toggle() {
       this.isToggled = !this.isToggled;
+    },
+    toggle2() {
+      this.isToggled = !this.isToggled;
+      this.dialogBox = !this.dialogBox;
+    },
+    closeModal() {
+      this.dialogBox = false;
     },
   },
 };
