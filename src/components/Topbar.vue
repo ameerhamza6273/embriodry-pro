@@ -89,92 +89,97 @@
       </div>
     </nav>
     <!-- <loginForm v-if="showLogin" /> -->
-    <section
-      v-if="showLogin"
-      class="absolute max-w-[360px] min-w-[300px] bg-white p-6 border border-[#F2F6F7] top-11 right-14 rounded shadow-lg z-30"
-    >
-      <form>
-        <h1
-          class="font-bold text-[#005C9A] text-center text-xl mt-[-10px] mb-1"
-        >
-          Sign Up
-        </h1>
-        <div class="border mb-2"></div>
-        <label class="text-[#695564] text-sm font-normal">Username</label><br />
-        <input
-          type="text"
-          placeholder="Username..."
-          class="border border-[#D0D5DD] rounded py-2 px-2 mt-1.5 mb-2 text-[#DBDBDB] text-sm font-normal w-full"
-        /><br />
-        <label class="text-[#695564] text-sm font-normal">Email</label><br />
-        <input
-          type="email"
-          placeholder="Email..."
-          class="border border-[#D0D5DD] rounded py-2 px-2 mt-1.5 mb-2 text-[#DBDBDB] text-sm font-normal w-full"
-        /><br />
-        <label class="text-[#695564] text-sm font-normal">Password</label><br />
-        <input
-          type="text"
-          placeholder="*******"
-          class="border border-[#D0D5DD] rounded py-2 px-2 mt-1.5 text-[#DBDBDB] text-sm font-normal w-full"
-        /><br />
-        <!-- <span class="mt-2 text-sm text-[#005C9A] font-light"
+    <template v-if="show">
+      <section
+        v-if="showSignUp"
+        class="absolute max-w-[360px] min-w-[300px] bg-white p-6 border border-[#F2F6F7] top-11 right-14 rounded shadow-lg z-30"
+      >
+        <form>
+          <h1
+            class="font-bold text-[#005C9A] text-center text-xl mt-[-10px] mb-1"
+          >
+            Sign Up
+          </h1>
+          <div class="border mb-2"></div>
+          <label class="text-[#695564] text-sm font-normal">Username</label
+          ><br />
+          <input
+            type="text"
+            placeholder="Username..."
+            class="border border-[#D0D5DD] rounded py-2 px-2 mt-1.5 mb-2 text-[#DBDBDB] text-sm font-normal w-full"
+          /><br />
+          <label class="text-[#695564] text-sm font-normal">Email</label><br />
+          <input
+            type="email"
+            placeholder="Email..."
+            class="border border-[#D0D5DD] rounded py-2 px-2 mt-1.5 mb-2 text-[#DBDBDB] text-sm font-normal w-full"
+          /><br />
+          <label class="text-[#695564] text-sm font-normal">Password</label
+          ><br />
+          <input
+            type="text"
+            placeholder="*******"
+            class="border border-[#D0D5DD] rounded py-2 px-2 mt-1.5 text-[#DBDBDB] text-sm font-normal w-full"
+          /><br />
+          <!-- <span class="mt-2 text-sm text-[#005C9A] font-light"
             >Forget Password</span
           > -->
-        <button
-          class="bg-navbgcolor rounded text-white font-bold text-sm hover:opacity-85 w-full py-1.5 mt-5"
-        >
-          Signup
-        </button>
-        <p class="text-center text-sm font-light text-[#333333] mt-2">
-          Already have an account?<a
-            class="text-[#005C9A] ml-1 font-semibold underline cursor-pointer"
-            @click="updateVariables(false, true)"
-            >Login</a
+          <button
+            class="bg-navbgcolor rounded text-white font-bold text-sm hover:opacity-85 w-full py-1.5 mt-5"
           >
-        </p>
-      </form>
-    </section>
-    <section
-      v-if="show"
-      class="absolute max-w-[360px] min-w-[300px] bg-white p-6 border border-[#F2F6F7] top-11 right-14 rounded shadow-lg z-30"
-    >
-      <form>
-        <h1
-          class="font-bold text-[#005C9A] text-center text-xl mt-[-10px] mb-1"
-        >
-          Login
-        </h1>
-        <div class="border mb-2"></div>
-        <label class="text-[#695564] text-sm font-normal">Email</label><br />
-        <input
-          type="text"
-          placeholder="Enter here"
-          class="border border-[#D0D5DD] rounded py-2 px-2 mt-1.5 mb-2 text-[#DBDBDB] text-sm font-normal w-full"
-        /><br />
-        <label class="text-[#695564] text-sm font-normal">Password</label><br />
-        <input
-          type="text"
-          placeholder="*******"
-          class="border border-[#D0D5DD] rounded py-2 px-2 mt-1.5 text-[#DBDBDB] text-sm font-normal w-full"
-        /><br />
-        <!-- <span class="mt-2 text-sm text-[#005C9A] font-light"
+            Signup
+          </button>
+          <p class="text-center text-sm font-light text-[#333333] mt-2">
+            Already have an account?<a
+              class="text-[#005C9A] ml-1 font-semibold underline cursor-pointer"
+              @click="updateVariables(false, true)"
+              >Login</a
+            >
+          </p>
+        </form>
+      </section>
+      <section
+        v-if="showLogin"
+        class="absolute max-w-[360px] min-w-[300px] bg-white p-6 border border-[#F2F6F7] top-11 right-14 rounded shadow-lg z-30"
+      >
+        <form>
+          <h1
+            class="font-bold text-[#005C9A] text-center text-xl mt-[-10px] mb-1"
+          >
+            Login
+          </h1>
+          <div class="border mb-2"></div>
+          <label class="text-[#695564] text-sm font-normal">Email</label><br />
+          <input
+            type="text"
+            placeholder="Enter here"
+            class="border border-[#D0D5DD] rounded py-2 px-2 mt-1.5 mb-2 text-[#DBDBDB] text-sm font-normal w-full"
+          /><br />
+          <label class="text-[#695564] text-sm font-normal">Password</label
+          ><br />
+          <input
+            type="text"
+            placeholder="*******"
+            class="border border-[#D0D5DD] rounded py-2 px-2 mt-1.5 text-[#DBDBDB] text-sm font-normal w-full"
+          /><br />
+          <!-- <span class="mt-2 text-sm text-[#005C9A] font-light"
           >Forget Password</span
         > -->
-        <button
-          class="bg-navbgcolor rounded text-white font-bold text-sm hover:opacity-85 w-full py-1.5 mt-5"
-        >
-          Login
-        </button>
-        <p class="text-center text-sm font-light text-[#333333] mt-2">
-          Don't have an account?<a
-            class="text-[#005C9A] ml-1 font-semibold underline cursor-pointer"
-            @click="updateLoginVariables(false, true)"
-            >Signup</a
+          <button
+            class="bg-navbgcolor rounded text-white font-bold text-sm hover:opacity-85 w-full py-1.5 mt-5"
           >
-        </p>
-      </form>
-    </section>
+            Login
+          </button>
+          <p class="text-center text-sm font-light text-[#333333] mt-2">
+            Don't have an account?<a
+              class="text-[#005C9A] ml-1 font-semibold underline cursor-pointer"
+              @click="updateLoginVariables"
+              >Signup</a
+            >
+          </p>
+        </form>
+      </section>
+    </template>
   </div>
 </template>
 
@@ -190,17 +195,18 @@ export default {
   data() {
     return {
       show: false,
-      showLogin: false,
+      showSignUp: false,
+      showLogin: true,
     };
   },
   methods: {
-    updateVariables(firstValue, secondValue) {
-      this.showLogin = firstValue;
-      this.show = secondValue;
+    updateVariables() {
+      this.showLogin = true;
+      this.showSignUp = false;
     },
-    updateLoginVariables(firstValue, secondValue) {
-      this.show = firstValue;
-      this.showLogin = secondValue;
+    updateLoginVariables() {
+      this.showLogin = false;
+      this.showSignUp = true;
     },
   },
 };
