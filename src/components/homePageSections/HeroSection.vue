@@ -15,7 +15,7 @@
         v-for="(item, index) in carouselImages"
         :key="index"
       >
-        <img :src="item.img" alt="user" class="w-full md:h-[500px] h-[220px]" />
+        <img :src="item.img" alt="user" class="w-full h-screen" />
       </div>
     </carousel>
     <!-- about section -->
