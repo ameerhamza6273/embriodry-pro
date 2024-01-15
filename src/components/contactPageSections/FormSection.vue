@@ -40,7 +40,7 @@
             required
           ></textarea>
           <button
-            class="bg-navbgcolor rounded px-4 py-2 text-white mt-4 font-bold text-sm hover:opacity-85"
+            class="bg-navbgcolor font-bevietnam rounded px-4 py-2 text-white mt-4 font-bold text-sm hover:opacity-85"
           >
             Send Message
           </button>
@@ -52,36 +52,36 @@
         <div>
           <img src="music.png" alt="user" class="mx-auto" />
           <h3
-            class="font-bevietnam text-center text-headingclr font-bold text-xl mt-2"
+            class="font-bevietnam text-center text-headingclr font-bold text-2xl mt-2"
           >
             Our Contact
           </h3>
           <P
-            class="font-bevietnam text-center text-[#333] font-light text-xs mt-2"
+            class="font-bevietnam text-center text-[#333] font-light text-lg mt-2"
             >0333 303 4870</P
           >
         </div>
         <div>
           <img src="Group 9156.png" alt="user" class="mx-auto" />
           <h3
-            class="font-bevietnam text-center text-headingclr font-bold text-xl mt-2"
+            class="font-bevietnam text-center text-headingclr font-bold text-2xl mt-2"
           >
             Mail Us
           </h3>
           <P
-            class="font-bevietnam text-center text-[#333] font-light text-xs mt-2"
+            class="font-bevietnam text-center text-[#333] font-light text-lg mt-2"
             >info@privatahealthcare.co.uk</P
           >
         </div>
         <div>
           <img src="Group 9023.png" alt="user" class="mx-auto" />
           <h3
-            class="font-bevietnam text-center text-headingclr font-bold text-xl mt-2"
+            class="font-bevietnam text-center text-headingclr font-bold text-2xl mt-2"
           >
             Our Location
           </h3>
           <P
-            class="font-bevietnam text-center text-[#333] font-light text-xs mt-2"
+            class="font-bevietnam text-center text-[#333] font-light text-lg mt-2"
             >Brighter Spaces, 7 Hawthorn Lane, Wilmslow, SK9 1AA</P
           >
         </div>

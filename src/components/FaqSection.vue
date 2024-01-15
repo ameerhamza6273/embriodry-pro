@@ -4,7 +4,7 @@
     <!-- service section -->
     <div class="faq-main md:pt-32 pt-16 md:h-[400px] h-[200px]">
       <h1
-        class="font-bevietnam text-center font-bold md:text-4xl text-xl text-white"
+        class="font-bevietnam text-center font-bold md:text-5xl text-xl text-white"
       >
         FAQ’s
       </h1>

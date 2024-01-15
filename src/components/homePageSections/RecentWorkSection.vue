@@ -6,7 +6,7 @@
       Recent Work
     </h1>
     <p
-      class="font-bevietnam text-center mt-5 font-normal text-base text-textcolor lg:px-6"
+      class="font-bevietnam text-center mt-5 font-normal text-lg text-textcolor lg:px-6"
     >
       Lorem ipsum dolor sit amet consectetur. Quis purus viverra aliquet morbi
       elit magna luctus vulputate pretium. Gravida ultrices fermentum velit
@@ -35,7 +35,7 @@
       </div>
     </div>
     <button
-      class="bg-navbgcolor rounded px-4 py-2 flex text-white mx-auto mt-20 font-bold text-sm items-center hover:opacity-85"
+      class="bg-navbgcolor font-bevietnam rounded px-4 py-2 flex text-white mx-auto mt-20 font-bold text-sm items-center hover:opacity-85"
       @click="$router.push('/gallery')"
     >
       Know more about us<img src="Arrow 4.png" alt="user" class="ml-2 h-3.5" />

@@ -25,7 +25,7 @@
       About
     </h1>
     <p
-      class="font-bevietnam text-center max-w-[1200px] mx-auto mt-4 px-2 font-normal text-base text-textcolor"
+      class="font-bevietnam text-center max-w-[1200px] mx-auto mt-4 px-2 font-normal text-lg text-textcolor"
     >
       Lorem ipsum dolor sit amet consectetur. Augue curabitur et elit fames
       faucibus eget maecenas egestas posuere. Nunc adipiscing erat et rutrum
@@ -42,7 +42,7 @@
       <div class="self-center">
         <div v-for="value in aboutBox" :key="value.icon" class="flex my-4">
           <img :src="value.icon" alt="user" class="h-7 mr-3 mt-1" />
-          <p class="text-lg">{{ value.text }}</p>
+          <p class="text-lg font-bevietnam">{{ value.text }}</p>
         </div>
       </div>
     </div>

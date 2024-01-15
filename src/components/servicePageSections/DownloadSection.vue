@@ -59,7 +59,7 @@
         </div>
       </div>
       <button
-        class="bg-navbgcolor rounded px-4 py-2 flex text-white mx-auto mt-12 font-bold text-sm items-center hover:opacity-85"
+        class="bg-navbgcolor rounded font-bevietnam px-4 py-2 flex text-white mx-auto mt-12 font-bold text-sm items-center hover:opacity-85"
       >
         View More<img src="Arrow 4.png" alt="user" class="ml-2 h-3.5" />
       </button>

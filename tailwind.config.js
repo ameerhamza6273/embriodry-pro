@@ -6,7 +6,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      bevietnam: ["Be Vietnam Pro"],
+      bevietnam: ["bevietnam"],
     },
     extend: {
       colors: {

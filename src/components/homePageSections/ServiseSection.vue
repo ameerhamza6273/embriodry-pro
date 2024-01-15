@@ -5,7 +5,7 @@
         Our Services
       </h1>
       <p
-        class="font-bevietnam text-center max-w-[1200px] mx-auto mt-6 font-normal text-base text-textcolor"
+        class="font-bevietnam text-center max-w-[1200px] mx-auto mt-6 font-normal text-lg text-textcolor"
       >
         Lorem ipsum dolor sit amet consectetur. Augue curabitur et elit fames
         faucibus eget maecenas egestas posuere. Lorem ipsum dolor sit amet
@@ -32,7 +32,7 @@
         </div>
       </div>
       <button
-        class="bg-navbgcolor rounded px-4 py-2 flex text-white mx-auto mt-12 font-bold text-sm items-center hover:opacity-85"
+        class="bg-navbgcolor font-bevietnam rounded px-4 py-2 flex text-white mx-auto mt-12 font-bold text-sm items-center hover:opacity-85"
         @click="$router.push('/services')"
       >
         View More<img src="Arrow 4.png" alt="user" class="ml-2 h-3.5" />

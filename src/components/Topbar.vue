@@ -5,7 +5,7 @@
     >
       <div class="max-w-screen-xl mx-auto">
         <ul
-          class="flex font-bold text-base text-[#244E6A] items-center max-w-[1015px] ml-auto"
+          class="flex font-bold text-lg text-[#244E6A] items-center max-w-[1065px] ml-auto font-bevietnam"
         >
           <li class="px-4">
             <a>
@@ -67,7 +67,7 @@
           </li>
           <li class="px-4">
             <button
-              class="bg-navbgcolor rounded pl-2 pr-2 py-1 flex text-white font-bold text-sm items-center hover:opacity-85"
+              class="bg-navbgcolor font-bevietnam rounded pl-2 pr-2 py-1 flex text-white font-bold text-sm items-center hover:opacity-85"
               v-on:click="show = !show"
             >
               Login<svg
@@ -92,7 +92,7 @@
     <template v-if="show || dialogBox">
       <section
         v-if="showSignUp"
-        class="absolute max-w-[360px] min-w-[300px] bg-white p-6 border border-[#F2F6F7] top-16 lg:top-11 lg:right-14 right-4 rounded shadow-lg z-30"
+        class="absolute max-w-[360px] min-w-[300px] bg-white p-6 border border-[#F2F6F7] top-[70px] lg:top-11 lg:right-14 right-4 rounded shadow-lg z-30"
       >
         <form>
           <span
@@ -101,40 +101,46 @@
             >x</span
           >
           <h1
-            class="font-bold text-[#005C9A] text-center text-xl mt-[-10px] mb-1"
+            class="font-bold text-[#005C9A] text-center text-xl mt-[-10px] mb-1 font-bevietnam"
           >
             Sign Up
           </h1>
           <div class="border mb-2"></div>
-          <label class="text-[#695564] text-sm font-normal">Username</label
+          <label class="text-[#695564] text-sm font-normal font-bevietnam"
+            >Username</label
           ><br />
           <input
             type="text"
             placeholder="Username..."
-            class="border border-[#D0D5DD] rounded py-2 px-2 mt-1.5 mb-2 text-[#DBDBDB] text-sm font-normal w-full"
+            class="border border-[#D0D5DD] font-bevietnam rounded py-2 px-2 mt-1.5 mb-2 text-[#DBDBDB] text-sm font-normal w-full"
           /><br />
-          <label class="text-[#695564] text-sm font-normal">Email</label><br />
+          <label class="text-[#695564] text-sm font-normal font-bevietnam"
+            >Email</label
+          ><br />
           <input
             type="email"
             placeholder="Email..."
-            class="border border-[#D0D5DD] rounded py-2 px-2 mt-1.5 mb-2 text-[#DBDBDB] text-sm font-normal w-full"
+            class="border border-[#D0D5DD] rounded py-2 px-2 font-bevietnam mt-1.5 mb-2 text-[#DBDBDB] text-sm font-normal w-full"
           /><br />
-          <label class="text-[#695564] text-sm font-normal">Password</label
+          <label class="text-[#695564] text-sm font-normal font-bevietnam"
+            >Password</label
           ><br />
           <input
             type="text"
             placeholder="*******"
-            class="border border-[#D0D5DD] rounded py-2 px-2 mt-1.5 text-[#DBDBDB] text-sm font-normal w-full"
+            class="border border-[#D0D5DD] rounded font-bevietnam py-2 px-2 mt-1.5 text-[#DBDBDB] text-sm font-normal w-full"
           /><br />
           <!-- <span class="mt-2 text-sm text-[#005C9A] font-light"
             >Forget Password</span
           > -->
           <button
-            class="bg-navbgcolor rounded text-white font-bold text-sm hover:opacity-85 w-full py-1.5 mt-5"
+            class="bg-navbgcolor rounded text-white font-bevietnam font-bold text-sm hover:opacity-85 w-full py-1.5 mt-5"
           >
             Signup
           </button>
-          <p class="text-center text-sm font-light text-[#333333] mt-2">
+          <p
+            class="text-center text-sm font-light text-[#333333] mt-2 font-bevietnam"
+          >
             Already have an account?<a
               class="text-[#005C9A] ml-1 font-semibold underline cursor-pointer"
               @click="updateVariables(false, true)"
@@ -145,7 +151,7 @@
       </section>
       <section
         v-if="showLogin"
-        class="absolute max-w-[360px] min-w-[300px] bg-white p-6 border border-[#F2F6F7] top-16 lg:top-11 lg:right-14 right-4 rounded shadow-lg z-30"
+        class="absolute max-w-[360px] min-w-[300px] bg-white p-6 border border-[#F2F6F7] top-[70px] lg:top-11 lg:right-14 right-4 rounded shadow-lg z-30"
       >
         <form>
           <span
@@ -154,33 +160,38 @@
             >x</span
           >
           <h1
-            class="font-bold text-[#005C9A] text-center text-xl mt-[-10px] mb-1"
+            class="font-bold text-[#005C9A] text-center text-xl mt-[-10px] mb-1 font-bevietnam"
           >
             Login
           </h1>
           <div class="border mb-2"></div>
-          <label class="text-[#695564] text-sm font-normal">Email</label><br />
+          <label class="text-[#695564] text-sm font-normal font-bevietnam"
+            >Email</label
+          ><br />
           <input
             type="text"
             placeholder="Enter here"
-            class="border border-[#D0D5DD] rounded py-2 px-2 mt-1.5 mb-2 text-[#DBDBDB] text-sm font-normal w-full"
+            class="border border-[#D0D5DD] rounded py-2 font-bevietnam px-2 mt-1.5 mb-2 text-[#DBDBDB] text-sm font-normal w-full"
           /><br />
-          <label class="text-[#695564] text-sm font-normal">Password</label
+          <label class="text-[#695564] text-sm font-normal font-bevietnam"
+            >Password</label
           ><br />
           <input
             type="text"
             placeholder="*******"
-            class="border border-[#D0D5DD] rounded py-2 px-2 mt-1.5 text-[#DBDBDB] text-sm font-normal w-full"
+            class="border border-[#D0D5DD] rounded py-2 font-bevietnam px-2 mt-1.5 text-[#DBDBDB] text-sm font-normal w-full"
           /><br />
           <!-- <span class="mt-2 text-sm text-[#005C9A] font-light"
           >Forget Password</span
         > -->
           <button
-            class="bg-navbgcolor rounded text-white font-bold text-sm hover:opacity-85 w-full py-1.5 mt-5"
+            class="bg-navbgcolor rounded text-white font-bevietnam font-bold text-sm hover:opacity-85 w-full py-1.5 mt-5"
           >
             Login
           </button>
-          <p class="text-center text-sm font-light text-[#333333] mt-2">
+          <p
+            class="text-center text-sm font-light text-[#333333] mt-2 font-bevietnam"
+          >
             Don't have an account?<a
               class="text-[#005C9A] ml-1 font-semibold underline cursor-pointer"
               @click="updateLoginVariables"

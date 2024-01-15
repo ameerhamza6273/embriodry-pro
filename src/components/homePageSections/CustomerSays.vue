@@ -23,7 +23,7 @@
           >
             {{ card.title }}
           </h2>
-          <P class="font-bevietnam text-[#444444] text-base mt-2">{{
+          <P class="font-bevietnam text-[#444444] text-lg mt-2 pr-2">{{
             card.text
           }}</P>
         </div>

@@ -4,7 +4,7 @@
       <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 mt-14">
         <div>
           <img src="logo.svg" alt="user" class="w-40" />
-          <p class="text-white text-sm font-bevietnam opacity-[0.7] mt-5">
+          <p class="text-white text-base font-bevietnam opacity-[0.7] mt-5">
             Lorem ipsum dolor sit amet consectetur. Mollis aenean vitae sed
             tincidunt bibendum mattis sed turpis. Dignissim ipsum eu et eget
             sit. Lectus lectus vitae amet sapien aliquam. Ullamcorper quis enim
@@ -15,7 +15,7 @@
           <h2 class="text-lg font-bevietnam text-white font-semibold">
             Our Links
           </h2>
-          <ul class="text-white text-xs font-bevietnam opacity-[0.7]">
+          <ul class="text-white text-sm font-bevietnam opacity-[0.7]">
             <li class="mt-2">
               <a>Home</a>
             </li>
@@ -35,7 +35,7 @@
         </div>
         <div class="max-w-[100px] lg:mx-auto">
           <h2 class="text-lg font-bevietnam text-white font-semibold">Help</h2>
-          <ul class="text-white text-xs font-bevietnam opacity-[0.7]">
+          <ul class="text-white text-sm font-bevietnam opacity-[0.7]">
             <li class="mt-2">
               <a>Contact Us</a>
             </li>
@@ -51,7 +51,7 @@
           <h2 class="text-lg font-bevietnam text-white font-semibold">
             Get In Touch
           </h2>
-          <ul class="text-white text-xs font-bevietnam opacity-[0.7]">
+          <ul class="text-white text-sm font-bevietnam opacity-[0.7]">
             <li class="mt-2 flex">
               <img src="icon.png" alt="user" class="h-4" />
               <a class="ml-3">123456789</a>
@@ -72,7 +72,7 @@
       </div>
       <hr class="bg-white mt-7" />
       <p
-        class="text-center text-white text-xs font-bevietnam opacity-[0.7] mt-5 mb-3"
+        class="text-center text-white text-sm font-bevietnam opacity-[0.7] mt-5 mb-3"
       >
         Copyright © 2023 All rights reserved
       </p>

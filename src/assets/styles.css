@@ -5,3 +5,8 @@
 @import 'tailwindcss/utilities';
 
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Montserrat:wght@700&family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: bevietnam;
+    src: url(./family.ttf.ttf);
+}

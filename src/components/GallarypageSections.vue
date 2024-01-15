@@ -9,7 +9,7 @@
       Gallery
     </h1>
     <p
-      class="font-bevietnam text-center max-w-[1200px] px-2 mx-auto mt-4 font-normal text-base text-textcolor"
+      class="font-bevietnam text-center max-w-[1200px] px-2 mx-auto mt-4 font-normal text-lg text-textcolor"
     >
       Lorem ipsum dolor sit amet consectetur. Augue curabitur et elit fames
       faucibus eget maecenas egestas posuere. Lorem ipsum dolor sit amet
