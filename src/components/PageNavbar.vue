@@ -110,7 +110,7 @@ export default {
         { title: "Home", link: "/" },
         { title: "Our Services", link: "/services" },
         { title: "Gallery", link: "/gallery" },
-        { title: "Place Order", link: "" },
+        { title: "Place Order", link: "/placeOrder" },
         { title: "FAQ’s", link: "/faq" },
         { title: "Contact Us", link: "/contact" },
       ],
