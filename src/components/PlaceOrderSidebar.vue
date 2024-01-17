@@ -47,7 +47,7 @@
           <li
             class="flex items-center cursor-pointer p-2 text-[#005C9A] font-bevietnam font-bold rounded bg-white hover:opacity-80 group"
             :class="{
-              'border bg-[#005c9afc] text-white': activeItem === 'item2',
+              'border text-white bg-[#005c9afc]': activeItem === 'item2',
             }"
             @click="setActiveItem('item2')"
           >
@@ -96,3 +96,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.bg-\[\#005c9afc\] {
+  background-color: #005c9afc !important;
+}
+</style>
