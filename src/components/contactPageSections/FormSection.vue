@@ -2,7 +2,7 @@
   <div class="bg-themebgcolor px-3 pb-16">
     <div class="grid grid-cols-7 gap-14 max-w-[1200px] mx-auto">
       <div class="bg-white md:col-span-5 col-span-7 px-6 py-16">
-        <form>
+        <form @submit.prevent="CotactForm">
           <label class="font-bevietnam text-[#333] font-light text-lg"
             >Full Name*</label
           ><br />
@@ -91,6 +91,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   name: "contactFormSection",
   data() {
@@ -98,6 +99,32 @@ export default {
       //
     };
   },
-  methods: {},
+  methods: {
+    async CotactForm() {
+      try {
+        const response = await axios.post("/api/contact", {
+          name: "Hamza",
+        });
+
+        // Log the entire response for inspection
+        console.log("Response:", response);
+
+        // Check if response is defined before accessing data
+        if (response) {
+          console.log("Login successful:", response.data);
+        } else {
+          console.error("Login failed: No response received");
+        }
+      } catch (error) {
+        // Log the entire error for inspection
+        console.error("Login failed:", error);
+
+        // Check if error.response is defined before accessing data
+        if (error.response) {
+          console.error("Error response data:", error.response.data);
+        }
+      }
+    },
+  },
 };
 </script>

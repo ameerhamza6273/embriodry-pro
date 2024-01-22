@@ -40,7 +40,7 @@
         <img src="image 35.png" alt="user" />
       </div>
       <div class="self-center">
-        <div v-for="value in aboutBox" :key="value.icon" class="flex my-4">
+        <div v-for="(value, index) in aboutBox" :key="index" class="flex my-4">
           <img :src="value.icon" alt="user" class="h-7 mr-3 mt-1" />
           <p class="text-lg font-bevietnam">{{ value.text }}</p>
         </div>
@@ -63,19 +63,19 @@ export default {
       ],
       aboutBox: [
         {
-          icon: "Group 1000002024.png",
+          icon: "Group-1000002024.png",
           text: "Lorem ipsum dolor sit amet consectetur. Augue curabitur et elit fames faucibus eget maecenas egestas posuere.",
         },
         {
-          icon: "Group 1000002024.png",
+          icon: "Group-1000002024.png",
           text: "Lorem ipsum dolor sit amet consectetur. Augue curabitur et elit fames faucibus eget maecenas egestas posuere.",
         },
         {
-          icon: "Group 1000002024.png",
+          icon: "Group-1000002024.png",
           text: "Lorem ipsum dolor sit amet consectetur. Augue curabitur et elit fames faucibus eget maecenas egestas posuere.",
         },
         {
-          icon: "Group 1000002024.png",
+          icon: "Group-1000002024.png",
           text: "Lorem ipsum dolor sit amet consectetur. Augue curabitur et elit fames faucibus eget maecenas egestas posuere.",
         },
       ],

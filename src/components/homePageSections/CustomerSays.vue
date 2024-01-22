@@ -9,8 +9,8 @@
         class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 mt-20"
       >
         <div
-          v-for="card in customerCards"
-          :key="card.avatar"
+          v-for="(card, index) in customerCards"
+          :key="index"
           class="bg-white rounded-xl p-7 shadow-lg"
         >
           <img :src="card.avatar" alt="user" class="h-16" />

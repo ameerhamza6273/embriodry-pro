@@ -16,8 +16,8 @@
     </p>
     <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mt-20 gap-8">
       <div
-        v-for="card in recentCards"
-        :key="card.icon"
+        v-for="(card, index) in recentCards"
+        :key="index"
         class="rounded-xl cursor-pointer"
         @click="$router.push('/gallery')"
       >

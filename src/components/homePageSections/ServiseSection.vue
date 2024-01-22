@@ -17,8 +17,8 @@
         class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5 mt-20"
       >
         <div
-          v-for="card in serviseCards"
-          :key="card.icon"
+          v-for="(card, index) in serviseCards"
+          :key="index"
           class="bg-white rounded-xl p-3 shadow-lg cursor-pointer"
           @click="$router.push('/services')"
         >

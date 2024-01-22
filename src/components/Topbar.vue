@@ -153,7 +153,7 @@
         v-if="showLogin"
         class="absolute max-w-[360px] min-w-[300px] bg-white p-6 border border-[#F2F6F7] top-[70px] lg:top-11 lg:right-14 right-4 rounded shadow-lg z-30"
       >
-        <form>
+        <form @submit.prevent="submitLoginForm">
           <span
             class="float-right mt-[-5px] cursor-pointer"
             @click="closeDialog"
@@ -172,6 +172,7 @@
             type="text"
             placeholder="Enter here"
             class="border border-[#D0D5DD] rounded py-2 font-bevietnam px-2 mt-1.5 mb-2 text-[#DBDBDB] text-sm font-normal w-full"
+            v-model="loginEmail"
           /><br />
           <label class="text-[#695564] text-sm font-normal font-bevietnam"
             >Password</label
@@ -180,6 +181,7 @@
             type="text"
             placeholder="*******"
             class="border border-[#D0D5DD] rounded py-2 font-bevietnam px-2 mt-1.5 text-[#DBDBDB] text-sm font-normal w-full"
+            v-model="loginPassword"
           /><br />
           <!-- <span class="mt-2 text-sm text-[#005C9A] font-light"
           >Forget Password</span
@@ -207,6 +209,7 @@
 <script>
 // import loginForm from "./LoginForm.vue";
 // import signupForm from "./SignupForm.vue";
+import axios from "axios";
 export default {
   name: "topbar",
   props: {
@@ -224,6 +227,8 @@ export default {
       show: false,
       showSignUp: false,
       showLogin: true,
+      loginEmail: "",
+      loginPassword: "",
     };
   },
   methods: {
@@ -238,6 +243,40 @@ export default {
     closeDialog() {
       this.$emit("closeDialog"); // Emit an event to inform the parent component to close the dialog
       this.show = false;
+    },
+    // login function ---
+    async submitLoginForm() {
+      try {
+        // Make a GET request to obtain the CSRF cookie
+        // await axios.get("http://127.0.0.1:8000/sanctum/csrf-cookie");
+
+        const email = this.loginEmail;
+        const password = this.loginPassword;
+
+        // Make a POST request to the login API
+        const response = await axios.post("/login", {
+          email,
+          password,
+        });
+
+        // Log the entire response for inspection
+        console.log("Response:", response);
+
+        // Check if response is defined before accessing data
+        if (response) {
+          console.log("Login successful:", response.data);
+        } else {
+          console.error("Login failed: No response received");
+        }
+      } catch (error) {
+        // Log the entire error for inspection
+        console.error("Login failed:", error);
+
+        // Check if error.response is defined before accessing data
+        if (error.response) {
+          console.error("Error response data:", error.response.data);
+        }
+      }
     },
   },
 };

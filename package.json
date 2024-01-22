@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
+    "axios": "^1.6.5",
     "core-js": "^3.8.3",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.4.0",
@@ -46,7 +47,7 @@
       "parser": "@babel/eslint-parser"
     },
     "rules": {
-      "vue/multi-word-component-names":"off"
+      "vue/multi-word-component-names": "off"
     }
   },
   "browserslist": [
